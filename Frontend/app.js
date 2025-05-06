@@ -43,3 +43,28 @@ groupButtons.forEach((button) => {
     changeSlider(index, originX, originY);
   });
 });
+
+
+function toggleDropdown() {
+  const menu = document.getElementById("dropdownMenu");
+  menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+
+// Optional: Close dropdown when clicking outside
+window.addEventListener("click", function (e) {
+  if (!e.target.closest(".profile-dropdown")) {
+    document.getElementById("dropdownMenu").style.display = "none";
+  }
+});
+
+function toggleDropdown() {
+  const menu = document.getElementById("dropdownMenu");
+  menu.classList.toggle("show");
+}
+
+// Close if clicked outside
+window.addEventListener("click", function (e) {
+  if (!e.target.closest(".profile-dropdown")) {
+    document.getElementById("dropdownMenu").classList.remove("show");
+  }
+});

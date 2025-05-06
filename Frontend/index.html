@@ -4,36 +4,49 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>NutriNova</title>
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/Frontend/style.css" />
 </head>
 <body>
 
   <!-- Header -->
   <header>
     <div class="header-left">
-      <div class="logo">
-        <img src="/images/logo.png" alt="Logo">
-      </div>
+      <button class="profile-btn" onclick="toggleDropdown()">
+        <i class="menu-icon">☰</i>
+      </button>
       <form class="search-form">
         <input type="text" class="search-input" placeholder="Search...">
         <button type="submit" class="search-button">🔍</button>
       </form>
     </div>
-  
+
     <div class="header-right">
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Features</a></li>
           <li><a href="#">Contact</a></li>
+          <li><a href="/Frontend/Login & Register/login.html">Login</a></li>
         </ul>
       </nav>
-      <div class="profile">
-        <!-- Your profile image or icon here -->
-        <a href="/Login & Register/register.html"><img src="/images/profile.jpg" alt="Profile" style="width: 40px; border-radius: 50%;"></a>
-        
+      <div class="profile-dropdown">
+        <button class="profile-btn" onclick="toggleDropdown()">
+          <img src="/Frontend/images/profile.jpg" alt="Profile" class="profile-icon">
+        </button>
+        <div id="dropdownMenu" class="dropdown-menu">
+          <div class="profile-header">
+            <img src="/Frontend/images/profile.jpg" alt="Profile" class="profile-pic">
+            <div class="profile-info">
+              <h4>Ajeesh Reegan A</h4>
+            </div>
+          </div>
+          <hr>
+          <a href="#">Edit Profile</a>
+          <a href="#">Settings & Privacy</a>
+          <a href="#">Help & Support</a>
+          <a href="#">Logout</a>
+        </div>
       </div>
-    </div>
   </header>
 
   <main>
@@ -121,6 +134,6 @@
     </section>
   </main>
 
-  <script src="/app.js"></script>
+  <script src="/Frontend/app.js"></script>
 </body>
 </html>
