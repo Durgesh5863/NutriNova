@@ -20,6 +20,100 @@
     padding-right: 50%;
     color: #0B3835;
 }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    height: 80px;
+    background-color: #4f8b69;
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+    z-index: 10;
+}
+
+/* Group container for logo and search */
+    .header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Group container for navbar and profile */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.search-form {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    max-width: 400px;
+}
+
+.search-input {
+    padding: 0.55rem 1rem;
+    font-size: 1rem;
+    border: 1px solid white;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    flex: 1;
+}
+
+.search-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: white;
+    color: white;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    }
+
+.search-button:hover {
+    background-color: #0096FF;
+}
+
+header .logo img {
+    width: 70px;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+header nav ul {
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    padding-right: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    border-left: 1px solid var(--border-color);
+}
 .others{
     height: 60px;
     width: 100vw;
